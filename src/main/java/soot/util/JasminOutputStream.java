@@ -40,8 +40,8 @@ public class JasminOutputStream extends ByteArrayOutputStream {
 
   @Override
   public void flush() {
-    ByteArrayInputStream bais = new ByteArrayInputStream(this.toByteArray());
-    jasmin.Main.assemble(bais, out, false);
+//    ByteArrayInputStream bais = new ByteArrayInputStream(this.toByteArray());
+//    jasmin.Main.assemble(bais, out, false);
   }
 
   @Override
