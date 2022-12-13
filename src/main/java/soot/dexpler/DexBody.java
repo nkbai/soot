@@ -279,14 +279,14 @@ public class DexBody {
 
     for (DebugItem di : code.getDebugItems()) {
       if (di instanceof ImmutableLineNumber) {
-        ImmutableLineNumber ln = (ImmutableLineNumber) di;
-        DexlibAbstractInstruction ins = instructionAtAddress(ln.getCodeAddress());
-        if (ins == null) {
-          // Debug.printDbg("Line number tag pointing to invalid
-          // offset: " + ln.getCodeAddress());
-          continue;
-        }
-        ins.setLineNumber(ln.getLineNumber());
+//        ImmutableLineNumber ln = (ImmutableLineNumber) di;
+//        DexlibAbstractInstruction ins = instructionAtAddress(ln.getCodeAddress());
+//        if (ins == null) {
+//          // Debug.printDbg("Line number tag pointing to invalid
+//          // offset: " + ln.getCodeAddress());
+//          continue;
+//        }
+//        ins.setLineNumber(ln.getLineNumber());
       } else if (di instanceof ImmutableStartLocal || di instanceof ImmutableRestartLocal) {
         int reg, codeAddr;
         String type, signature, name;
